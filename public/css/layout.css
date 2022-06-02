@@ -1,0 +1,25 @@
+.card-body:nth-of-type(2) {
+    line-height: 2;
+    height: calc(100vh - (40.3px + 39.03px ) );
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.card-body:nth-of-type(1) {
+    line-height: 2;
+    height: calc(100vh - (40px + 39.03px ) );
+}
+
+.card-header {
+    height: 40px;
+}
+
+
+.card-header-flex {
+    display: flex;
+    justify-content: space-between;
+    padding: 1% 5%;
+    align-items: center;
+  
+}
