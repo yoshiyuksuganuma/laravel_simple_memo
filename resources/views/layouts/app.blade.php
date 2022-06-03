@@ -101,12 +101,14 @@
                 </div>
                     <div class="card-body">
                         @foreach($memos as $memo)
-                        <a href="/edit/{{$memo['id']}}" class="card-text d-flex" style="text-decoration: none;align-items: center">
+                        <div class="mb-2">
+                        <a href="/edit/{{$memo['id']}}" class="card-text" style="text-decoration: none;">
                          <span >{{$memo['content']}}</span><br>
                         @if(!empty($memo['thumbnail']))
-                        <img src="{{ Storage::url($memo['thumbnail']) }}" width="5%" class="d-block ml-2">
+                        <i class="fa-solid fa-image d-block"></i>
                         @endif
                         </a>
+                        </div>
                         @endforeach
                     </div>
                 </div>
